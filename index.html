@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Energy Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Home Energy Monitoring</h1>
+        
+        <div class="dashboard">
+            <div class="card">
+                <h2>Current Energy Usage</h2>
+                <p id="currentEnergy">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h2>Set Energy Budget</h2>
+                <input type="number" id="budgetInput" placeholder="Enter kWh">
+                <button onclick="setBudget()">Set Budget</button>
+                <p id="budgetAlert"></p>
+            </div>
+        </div>
+
+        <canvas id="energyChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
